@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    display: flex;
+    background-color:aliceblue;
+}
+.sidebar{
+    background-color: white;
+    height: 100vh;
+    min-width: 15rem;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.app-name{
+    width: 100%;
+    color: #000080;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.2rem;
+}
+nav{
+    margin-top: 1rem;
+}
+nav > ul > li > a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #000080;
+    display: block;
+    text-align: center;
+    padding: 0.3rem;
+}
+nav > ul > li{
+    list-style: none;
+}
+nav > ul > li > a:hover{
+    background-color: #e6e6ff;
+}
+.content{
+    width: 100%;
+    background-color: rgb(245,250,255);
+    margin-left: 5px;
+}
+.topbar{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 480px){
+    p{
+        color: red;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px){
+    p{
+        color: green;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    p{
+        color: blueviolet;
+    }
+}
+@media screen and (min-width: 1025px){
+    p{
+        color: blue;
+    }
+}
